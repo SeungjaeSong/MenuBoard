@@ -84,7 +84,17 @@ class RestaurantsController < ApplicationController
   def getmenu
     @restaurant = Restaurant.find(:first, :conditions => { :mac_address => params[:mac] })
 
-    redirect_to :action => "show", :id => @restaurant.id 
-
+    #redirect_to :action => "show", :id => @restaurant.id 
+    if @restaurant.nil?
+      redirect_to :controller => 'home', :action => 'error'
+    else
+      if @restaurant.mac_address == 'A4:17:31:67:3B:6A'
+        redirect_to :controller => 'home', :action => 'index'
+      elsif @restaurant.mac_address == "D4:88:90:14:0F:23"
+        redirect_to :controller => 'home', :action => 'about'
+      else
+        redirect_to :controller => 'home', :action => 'error'
+      end
+    end
   end
 end

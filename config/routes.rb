@@ -1,14 +1,13 @@
 MenuBoard::Application.routes.draw do
-
-  
   resources :restaurants
 
   match "restaurants/:mac/:width/:height" => 'restaurants#getmenu'
 
-
   get "home/index"
+  get "home/about"
+  get "home/error"
 
-  match "home/index/:mac_address/:width/:height" => 'home#index'
+  match 'home/index' => 'home#index'
 
   root :to => "home#index"
 
