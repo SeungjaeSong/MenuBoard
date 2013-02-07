@@ -1,1 +1,197 @@
-<p1>868식당을 찾아주셔서 감사합니다.<p>
+<style type="text/css">
+#warap {
+width:<%=@width%>px;
+height:<%=@height%>px;
+}
+
+#left {
+	position:relative;
+	float:left;
+	margin:0 auto;
+	width:50%;
+	height:100%;
+}
+
+#righttop,#rightbottom {
+	position:relative;
+	float:left;
+	margin:0 auto;
+	width:50%;
+	height:50%;
+}
+
+#left img {
+  position:absolute;
+  left:0;
+  width:100%;
+  height:100%;
+}
+#righttop img {
+  position:absolute;
+  left:0;
+  width:100%;
+  height:100%;
+}
+#rightbottom img {
+  position:absolute;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+
+  @-webkit-keyframes cf3FadeInOut {
+   0% {
+     opacity:1;
+   }
+   25% {
+    opacity:1;
+  }
+  75% {
+    opacity:0;
+  }
+  100% {
+   opacity:0;
+ }
+}
+
+@-moz-keyframes cf3FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 25% {
+  opacity:1;
+}
+75% {
+  opacity:0;
+}
+100% {
+ opacity:0;
+}
+}
+
+@-o-keyframes cf3FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 25% {
+  opacity:1;
+}
+75% {
+  opacity:0;
+}
+100% {
+ opacity:0;
+}
+}
+
+@keyframes cf3FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 25% {
+  opacity:1;
+}
+75% {
+  opacity:0;
+}
+100% {
+ opacity:0;
+}
+}
+
+
+#left img.top {
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name: cf3FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 15s;
+  -moz-animation-direction: alternate;
+
+  -o-animation-name: cf3FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 15s;
+  -o-animation-direction: alternate;
+
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-direction: alternate;
+}
+
+#righttop img.top {
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name: cf3FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 10s;
+  -moz-animation-direction: alternate;
+
+  -o-animation-name: cf3FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 10s;
+  -o-animation-direction: alternate;
+
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+#rightbottom img.top {
+  -webkit-animation-name: cf3FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name: cf3FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+  -moz-animation-direction: alternate;
+
+  -o-animation-name: cf3FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 8s;
+  -o-animation-direction: alternate;
+
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-direction: alternate;
+}
+
+</style>
+
+<div id="warap">
+	<div id="left" class="shadow">
+		<img class="bottom" src="<%=asset_path "A1.jpg"%>" />
+  	<img class="top" src="<%=asset_path "A2.jpg"%>" />
+	</div>
+	<div id="righttop" class="shadow">
+		<img class="bottom" src="<%=asset_path "B1.jpg"%>" />
+  	<img class="top" src="<%=asset_path "B2.jpg"%>" />
+	</div>
+	<div id="rightbottom" class="shadow">
+		<img class="bottom" src="<%=asset_path "C1.jpg"%>" />
+  	<img class="top" src="<%=asset_path "C2.jpg"%>" />
+	</div>
+</div>
